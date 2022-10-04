@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Easy Team Up</string>
+    <string name="title_home">New Event</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_login">Log in</string>
+    <string name="description">Description</string>
+    <string name="event_name">Event name</string>
+    <string name="create_event">Create event</string>
+    <string name="modify_event">Modify event</string>
+    <string name="set_time">Set</string>
+    <string name="list">list</string>
+    <string name="map">map</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="back">BACK</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_invitation">User Profile</string>
+    <string name="id">ID</string>
+    <string name="register_prompt">Don\'t have an account? Register</string>
+    <string name="duration">Duration (minute)</string>
+    <string name="profile">Profile image URL</string>
+    <string name="_1234">1234</string>
+    <string name="_19">19</string>
+    <string name="usc_student">usc student</string>
+    <string name="user_id">User ID:\ </string>
+    <string name="age">Age:\ </string>
+    <string name="bio">Bio:\ </string>
+    <string name="history">History</string>
+    <string name="events">Events</string>
+    <string name="invitee_prompt">0 people selected</string>
+    <string name="slot_inital">0 slot selected</string>
+    <string name="map_mode">MAP MODE</string>
+</resources>

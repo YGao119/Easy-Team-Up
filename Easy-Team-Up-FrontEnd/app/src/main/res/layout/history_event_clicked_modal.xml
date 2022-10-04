@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+    <TextView
+        android:id="@+id/history_event_clicked_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="title"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:inputType="textCapWords"
+        app:layout_constraintStart_toEndOf="parent" />
+    <TextView
+        android:id="@+id/history_event_clicked_item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="this event is blablabla"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="parent" />
+    <TextView
+        android:id="@+id/history_event_clicked_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Event Date: 03/22/2022"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="parent" />
+    <TextView
+        android:id="@+id/history_event_clicked_item_determined_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Determined Time:"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="parent" />
+    <TextView
+        android:id="@+id/history_event_clicked_item_due_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Due Time:"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="parent" />
+    <TextView
+        android:id="@+id/history_event_clicked_item_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Event Owner:"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/history_event_clicked_item_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Location: 3115 Orchard Ave, Los Angeles, CA"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="parent" />
+    <TextView
+        android:id="@+id/history_event_clicked_item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Status:"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="parent" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="left">
+    <Button
+        android:id="@+id/action_button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Action"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"/>
+    <Button
+        android:id="@+id/reject_button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Reject"
+        android:layout_gravity="end"/>
+    </LinearLayout>
+
+</LinearLayout>

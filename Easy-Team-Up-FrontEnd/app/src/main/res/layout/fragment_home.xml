@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/event_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Enter event name"
+        android:inputType="textCapWords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/event_name" />
+
+    <TextView
+        android:id="@+id/event_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/event_name_edit" />
+
+    <EditText
+        android:id="@+id/event_description_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Enter description"
+        android:inputType="textLongMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/event_description" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/event_description_edit" />
+
+    <com.example.easyteamupfrontend.AutoCompleteEdit
+        android:id="@+id/address_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:focusable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address" />
+
+    <ImageButton
+        android:id="@+id/invitee_text"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/invite_btn"
+        app:layout_constraintStart_toEndOf="@+id/invite_btn"
+        app:layout_constraintTop_toTopOf="@+id/invite_btn" />
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Event date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address_edit" />
+
+    <TextView
+        android:id="@+id/select_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add time slots"
+        app:layout_constraintStart_toStartOf="@+id/select_time_btn"
+        app:layout_constraintTop_toBottomOf="@id/address_edit" />
+
+    <TextView
+        android:id="@+id/invite_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add participants"
+        app:layout_constraintStart_toStartOf="@+id/invite_btn"
+        app:layout_constraintTop_toBottomOf="@id/select_time_btn" />
+
+    <TextView
+        android:id="@+id/duration_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/duration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time_picker" />
+
+    <EditText
+        android:id="@+id/time_picker"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:hint="select date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time_text" />
+
+    <EditText
+        android:id="@+id/duration_edit"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:inputType="numberSigned"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/duration_text" />
+
+    <TextView
+        android:id="@+id/due_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Due date &amp; time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/duration_edit" />
+
+    <EditText
+        android:id="@+id/due_time_picker"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:hint="select date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/due_time_text" />
+
+    <ImageButton
+        android:id="@+id/time_slot_btn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:enabled="false"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/select_time_btn"
+        app:layout_constraintStart_toEndOf="@+id/select_time_btn"
+        app:layout_constraintTop_toTopOf="@+id/select_time_btn" />
+
+    <Button
+        android:id="@+id/invite_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="+ invite user"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/duration_edit"
+        app:layout_constraintStart_toEndOf="@+id/time_picker"
+        app:layout_constraintTop_toTopOf="@+id/duration_edit" />
+
+    <RadioGroup
+        android:id="@+id/publicity_rad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/due_time_picker">
+
+        <RadioButton
+            android:id="@+id/public_rad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Public" />
+
+        <RadioButton
+            android:id="@+id/private_rad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Private" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/select_time_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="+ time slot"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/time_picker"
+        app:layout_constraintStart_toEndOf="@id/time_picker"
+        app:layout_constraintTop_toTopOf="@+id/time_picker" />
+
+    <Button
+        android:id="@+id/create_event_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/create_event"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/publicity_rad" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment"
+    android:orientation="vertical"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:tag="events"
+    >
+    <Button
+        android:id="@+id/map_mode_button"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/baseline_map_24"
+        android:text="@string/map_mode">
+    </Button>
+    <ListView
+        android:id="@+id/event_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/map"/>
+</LinearLayout>
